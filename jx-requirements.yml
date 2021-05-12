@@ -23,7 +23,7 @@ spec:
   - key: production
   ingress:
     domain: jx.surenpi.com
-    externalDNS: false
+    externalDNS: true
     kind: ingress
     namespaceSubDomain: -jx.
     tls:
