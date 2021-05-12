@@ -9,6 +9,7 @@ data:
       enabled:
         linuxsuren-bot/go-demo: true
         linuxsuren-bot/jx: true
+        linuxsuren-bot/ks: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -22,6 +23,7 @@ data:
       merge_method:
         linuxsuren-bot/go-demo: merge
         linuxsuren-bot/jx: merge
+        linuxsuren-bot/ks: merge
       queries:
       - labels:
         - approved
@@ -34,6 +36,7 @@ data:
         repos:
         - linuxsuren-bot/jx
         - linuxsuren-bot/go-demo
+        - linuxsuren-bot/ks
       - labels:
         - updatebot
         missingLabels:
@@ -45,6 +48,7 @@ data:
         repos:
         - linuxsuren-bot/jx
         - linuxsuren-bot/go-demo
+        - linuxsuren-bot/ks
       target_url: http://dashboard-jx.jx.surenpi.com
 kind: ConfigMap
 metadata:

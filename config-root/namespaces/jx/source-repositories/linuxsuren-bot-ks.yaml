@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: linuxsuren-bot
+    provider: github
+    repository: ks
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: linuxsuren-bot-ks
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/linuxsuren-bot/ks.git
+  org: linuxsuren-bot
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: ks
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/linuxsuren-bot/ks
