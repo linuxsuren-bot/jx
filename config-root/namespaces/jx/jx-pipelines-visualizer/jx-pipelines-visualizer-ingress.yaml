@@ -18,7 +18,7 @@ metadata:
   namespace: jx
 spec:
   rules:
-    - host: dashboard-jx.change.me
+    - host: dashboard-jx.jx.surenpi.com
       http:
         paths:
           - backend:

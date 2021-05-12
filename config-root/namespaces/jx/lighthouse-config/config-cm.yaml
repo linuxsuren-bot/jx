@@ -41,7 +41,7 @@ data:
         - needs-rebase
         repos:
         - linuxsuren-bot/jx
-      target_url: http://dashboard-jx.
+      target_url: http://dashboard-jx.jx.surenpi.com
 kind: ConfigMap
 metadata:
   creationTimestamp: null
