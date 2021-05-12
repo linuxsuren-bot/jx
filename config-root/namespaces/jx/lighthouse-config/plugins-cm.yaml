@@ -6,6 +6,10 @@ data:
       repos:
       - linuxsuren-bot/jx
       require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - linuxsuren-bot/go-demo
+      require_self_approval: true
     cat: {}
     cherry_pick_unapproved: {}
     config_updater:
@@ -16,6 +20,9 @@ data:
         env/prow/plugins.yaml:
           name: plugins
     external_plugins:
+      linuxsuren-bot/go-demo:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
       linuxsuren-bot/jx:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
@@ -24,6 +31,22 @@ data:
       additional_labels: null
     owners: {}
     plugins:
+      linuxsuren-bot/go-demo:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       linuxsuren-bot/jx:
       - config-updater
       - approve
@@ -53,6 +76,11 @@ data:
     - repos:
       - linuxsuren-bot/jx
       trusted_org: todo
+    - repos:
+      - linuxsuren-bot/go-demo
+      trusted_org: todo
+    welcome:
+    - message_template: Welcome
 kind: ConfigMap
 metadata:
   creationTimestamp: null

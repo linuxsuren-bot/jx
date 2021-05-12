@@ -7,6 +7,7 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
+        linuxsuren-bot/go-demo: true
         linuxsuren-bot/jx: true
     plank: {}
     pod_namespace: jx
@@ -19,6 +20,7 @@ data:
         required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
+        linuxsuren-bot/go-demo: merge
         linuxsuren-bot/jx: merge
       queries:
       - labels:
@@ -31,6 +33,7 @@ data:
         - needs-rebase
         repos:
         - linuxsuren-bot/jx
+        - linuxsuren-bot/go-demo
       - labels:
         - updatebot
         missingLabels:
@@ -41,6 +44,7 @@ data:
         - needs-rebase
         repos:
         - linuxsuren-bot/jx
+        - linuxsuren-bot/go-demo
       target_url: http://dashboard-jx.jx.surenpi.com
 kind: ConfigMap
 metadata:

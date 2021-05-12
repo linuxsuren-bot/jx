@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: linuxsuren-bot
+    provider: github
+    repository: go-demo
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: linuxsuren-bot-go-demo
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/linuxsuren-bot/go-demo.git
+  org: linuxsuren-bot
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: go-demo
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/linuxsuren-bot/go-demo
