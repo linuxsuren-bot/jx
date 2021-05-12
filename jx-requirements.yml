@@ -22,7 +22,7 @@ spec:
   - key: staging
   - key: production
   ingress:
-    domain: ""
+    domain: "jx.surenpi.com"
     externalDNS: false
     kind: ingress
     namespaceSubDomain: -jx.
